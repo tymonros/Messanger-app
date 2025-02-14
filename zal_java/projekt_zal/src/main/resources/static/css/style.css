@@ -1,0 +1,83 @@
+<style>
+        body {
+            background-color: #1e1e1e;
+            color: #ddd;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #141414;
+        }
+
+        .navbar-brand {
+            color: #fff !important;
+        }
+
+        .action-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .action-button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .action-button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 5px 20px rgba(0, 123, 255, 0.4);
+        }
+
+        .conversation-list {
+            margin-top: 30px;
+        }
+
+        .conversation-item {
+            background-color: #2a2a2a;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s ease;
+        }
+
+        .conversation-item:hover {
+            background-color: #333;
+        }
+
+        .conversation-item a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+        }
+
+        .conversation-item a:hover {
+            color: #007bff;
+        }
+
+        .conversation-item .last-message {
+            font-size: 0.9rem;
+            color: #bbb;
+            margin-top: 10px;
+        }
+
+        .participants-list {
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1rem;
+            color: #bbb;
+        }
+    </style>

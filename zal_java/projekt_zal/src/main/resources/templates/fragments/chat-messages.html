@@ -1,0 +1,15 @@
+<!-- fragments/chat-messages.html -->
+<div th:fragment="messagesList" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div id="messagesList">
+        <div th:each="message : ${conversation.messages}"
+             th:classappend="${message.senderName == loggedInUser} ? 'align-self-end' : 'align-self-start'">
+            <div class="message-container">
+                <div th:class="${message.senderName == loggedInUser} ? 'message sent' : 'message received'">
+                    <strong th:text="${message.senderName}"></strong>
+                    <p th:text="${message.messageContent}"></p>
+                    <small class="text-muted" th:text="${message.formattedTimestamp}"></small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
